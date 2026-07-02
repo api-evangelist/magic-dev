@@ -1,0 +1,85 @@
+aid: magic-dev
+name: Magic
+review:
+  question: Does Magic expose a documented public WebSocket API?
+  answer: false
+  date: '2026-07-02'
+  reviewer: API Evangelist
+  asyncapiSpecCreated: false
+  asyncapiScopeNote: |
+    No AsyncAPI document was created. Magic does not publish any documented
+    public API of any transport - REST, WebSocket, or Server-Sent Events - so
+    there is no protocol surface, public or otherwise, to model as either an
+    OpenAPI or an AsyncAPI document.
+findings:
+  summary: |
+    Magic (magic.dev) does not expose a documented public WebSocket API, nor
+    does it expose any documented public API at all, of any transport. Magic
+    is a frontier AI research lab - not yet a shipping product company - whose
+    stated mission is to build frontier-scale code models toward safe AGI. Its
+    public web presence consists of a marketing/mission homepage, a research
+    blog (e.g. the LTM-1 announcement describing a 5M-token context window
+    model), a safety page describing alignment-research priorities, and a
+    careers page hiring research, inference-systems, pre-training, evals,
+    kernels, and infrastructure engineers. None of these pages references a
+    developer API, API reference, SDK, CLI, self-serve signup, waitlist, or
+    pricing for programmatic access.
+
+    Magic's research on ultra-long-context models is public via blog posts and
+    papers (LTM-1 at 5M tokens; the unreleased LTM-2-mini research prototype
+    reported by third parties to handle up to 100M tokens), but these are
+    research artifacts, not a hosted, callable API. Magic's GitHub organization,
+    magicproduct (verified domain magic.dev, contact office@magic.dev), hosts
+    `hash-hop` - a long-context LLM evaluation harness - plus a set of forked
+    infrastructure repositories (Terraform providers, Kubernetes tooling, CUDA
+    libraries used internally). None of these is an API client, SDK, or
+    developer-facing integration artifact.
+
+    Because there is no public product, there is also no WebSocket, SSE, or
+    REST transport documented anywhere on magic.dev, its blog, its careers
+    site, or its GitHub organization.
+  transports:
+    - protocol: REST
+      scheme: https
+      documented: false
+      note: No public REST API, base URL, or reference is documented anywhere on magic.dev.
+    - protocol: SSE
+      scheme: https
+      documented: false
+      note: No Server-Sent Events streaming surface is documented.
+    - protocol: WebSocket
+      scheme: wss
+      documented: false
+      note: No WebSocket (ws:// or wss://) endpoint is documented anywhere on magic.dev or in its GitHub organization.
+  endpointsConfirmedRest: []
+sources:
+  - url: https://magic.dev/
+    type: Website
+    note: Homepage states the mission ("building frontier code models to automate software engineering and research") with no product, API, pricing, or access-model information.
+  - url: https://magic.dev/blog/ltm-1
+    type: Documentation
+    note: Announces the LTM-1 research model (5M token context window); no API, developer access, or waitlist mentioned.
+  - url: https://magic.dev/careers
+    type: Documentation
+    note: Careers page describes mission, values, and open research/engineering roles only; no product or API referenced.
+  - url: https://magic.dev/safety
+    type: Documentation
+    note: Describes alignment-research priorities and safety policy advocacy; no API or product-availability information.
+  - url: https://github.com/magicproduct
+    type: GitHubOrganization
+    note: Verified-domain (magic.dev) GitHub org; pinned repo hash-hop is a long-context evaluation harness, plus forked infrastructure repos. No API SDK or client published.
+  - url: https://www.linkedin.com/company/magicailabs
+    type: LinkedIn
+    note: Company page describes mission ("build a coworker, not just a copilot") and funding history; no product or API access model described.
+actions:
+  asyncapiPath: null
+  apisYmlUpdated: true
+  reason: |
+    No public API of any transport exists for Magic, so no AsyncAPI document
+    was created and no OpenAPI, Postman/Open Collection, plans, rate-limits, or
+    FinOps artifacts were authored - there is nothing sourced to put in them.
+    The apis.yml documents Magic honestly as a pre-product frontier research
+    lab with an empty apis list and a common-properties block limited to the
+    verifiable public surfaces (website, blog, careers, safety page, GitHub
+    organization, LinkedIn). Reconcile this entry if Magic launches a public
+    developer API.

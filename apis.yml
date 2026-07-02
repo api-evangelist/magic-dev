@@ -1,0 +1,48 @@
+aid: magic-dev
+url: https://raw.githubusercontent.com/api-evangelist/magic-dev/refs/heads/main/apis.yml
+name: Magic
+kind: company
+description: >-
+  Magic (magic.dev) is a San Francisco frontier AI research lab building
+  frontier-scale code models - an "AI coworker" for software engineering,
+  and ultimately a path to safe AGI - rather than a shipping developer
+  product. It has raised roughly $515M from Nat Friedman, Daniel Gross,
+  CapitalG, Elad Gil, Sequoia, Jane Street, and Eric Schmidt, and has
+  published research on ultra-long-context models (LTM-1 at a 5M token
+  context window, and the unreleased LTM-2-mini research prototype
+  claimed to handle up to 100M tokens). As of this review Magic does not
+  publish a public, self-serve developer API, API reference, SDK, or
+  waitlist; its website and careers pages describe mission, research, and
+  open roles only, with no product access model, pricing, or documented
+  endpoints. Its GitHub organization (magicproduct) hosts research
+  tooling (e.g. hash-hop, a long-context evaluation harness) and
+  infrastructure forks, not an API client or SDK.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- AI
+- AGI Research
+- Coding Agent
+- Long Context
+- LLM
+- Frontier Lab
+- No Public API
+created: '2026-07-02'
+modified: '2026-07-02'
+specificationVersion: '0.19'
+apis: []
+common:
+- type: GitHubOrganization
+  url: https://github.com/magicproduct
+- type: LinkedIn
+  url: https://www.linkedin.com/company/magicailabs
+- type: Website
+  url: https://magic.dev
+- type: Blog
+  url: https://magic.dev/blog
+- type: Careers
+  url: https://magic.dev/careers
+- type: Safety
+  url: https://magic.dev/safety
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
