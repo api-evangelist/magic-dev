@@ -31,6 +31,10 @@ modified: '2026-07-02'
 specificationVersion: '0.19'
 apis: []
 common:
+- type: VulnerabilityDisclosure
+  url: security/magic-dev-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/magic-dev-domain-security.yml
 - type: GitHubOrganization
   url: https://github.com/magicproduct
 - type: LinkedIn
