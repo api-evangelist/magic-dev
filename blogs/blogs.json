@@ -1,0 +1,21 @@
+{
+  "repo": "magic-dev",
+  "feeds": [
+    {
+      "source": "https://magic.dev/blog",
+      "feed_url": "https://magic.dev/blog",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    },
+    {
+      "source": "https://magic.dev",
+      "feed_url": "https://magic.dev",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "fetched": "2026-07-11T11:50:51Z",
+  "post_count": 3
+}
