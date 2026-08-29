@@ -17,6 +17,17 @@ description: >-
   endpoints. Its GitHub organization (magicproduct) hosts research
   tooling (e.g. hash-hop, a long-context evaluation harness) and
   infrastructure forks, not an API client or SDK.
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: approval
