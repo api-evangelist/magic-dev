@@ -2,23 +2,21 @@
   "repo": "magic-dev",
   "feeds": [
     {
-      "source": "https://magic.dev/blog",
-      "feed_url": "https://magic.dev/blog",
-      "title": "",
-      "saved": 0,
-      "method": "none",
-      "nature": "vendor-blog",
-      "nature_basis": "path_blog"
-    },
-    {
       "source": "https://magic.dev",
       "feed_url": "https://magic.dev",
       "title": "",
       "saved": 0,
       "method": "none"
+    },
+    {
+      "source": "https://magic.dev/blog",
+      "feed_url": "https://magic.dev/blog",
+      "title": "",
+      "saved": 0,
+      "method": "none"
     }
   ],
-  "fetched": "2026-08-30T22:33:40Z",
+  "fetched": "2026-09-06T19:17:18Z",
   "post_count": 3,
   "feed_nature": "vendor-blog",
   "feed_nature_basis": "path_blog",
