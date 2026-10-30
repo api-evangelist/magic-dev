@@ -1,4 +1,4 @@
-# Magic (magic-dev)
+# Magic
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,45 +66,80 @@
 
 Magic (magic.dev) is a San Francisco frontier AI research lab building frontier-scale code models - an "AI coworker" for software engineering, and ultimately a path to safe AGI - rather than a shipping developer product. It has raised roughly $515M from Nat Friedman, Daniel Gross, CapitalG, Elad Gil, Sequoia, Jane Street, and Eric Schmidt, and has published research on ultra-long-context models (LTM-1 at a 5M token context window, and the unreleased LTM-2-mini research prototype claimed to handle up to 100M tokens). As of this review Magic does not publish a public, self-serve developer API, API reference, SDK, or waitlist; its website and careers pages describe mission, research, and open roles only, with no product access model, pricing, or documented endpoints. Its GitHub organization (magicproduct) hosts research tooling (e.g. hash-hop, a long-context evaluation harness) and infrastructure forks, not an API client or SDK.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/magic-dev/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/magic-dev/refs/heads/main/apis.yml)
+**Areas:** Artificial Intelligence · AGI Research · Coding Agents · Long Context · LLM · Frontier Lab · Foundation Models
 
-## Access Model
+## Magic on APIs.io
 
-Magic has no public product surface today:
+Everything profiled for Magic is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/magic-dev/](https://apis.io/providers/magic-dev/)** — or go straight to one of the APIs or properties below.
 
-- No self-serve signup, waitlist, pricing page, or customer dashboard is published on magic.dev.
-- No developer portal, API reference, base URL, authentication scheme, or SDK is documented.
-- The company's public output is limited to a marketing/mission homepage, a research blog (e.g. the LTM-1 announcement), a safety page describing alignment research priorities, and a careers page hiring research and infrastructure engineers.
-- Its GitHub organization, [magicproduct](https://github.com/magicproduct) (verified domain magic.dev, contact office@magic.dev), publishes research tooling - most notably `hash-hop`, a long-context evaluation harness for LLMs - and a handful of forked infrastructure repos (Terraform providers, Kubernetes tooling, CUDA libraries). None of this is an API client, SDK, or developer-facing artifact.
-- Co-founder and CEO is Eric Steinberger; co-founder and CTO is Sebastian De Ro.
+### Published properties
 
-Because there is no documented public API surface of any kind, this catalog entry intentionally omits the `apis` list along with `openapi/`, `plans/`, `rate-limits/`, `finops/`, and `collections/` artifacts that would otherwise describe endpoints, pricing, limits, and cost - there is nothing sourced to put in them.
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## Tags
+#### Security (2)
 
-- AI
-- AGI Research
-- Coding Agent
-- Long Context
-- LLM
-- Frontier Lab
-- No Public API
+Authentication, trust centre, and vulnerability disclosure.
 
-## Timestamps
+- [Magic Dev Domain Security](https://apis.io/security/magic-dev/magic-dev-domain-security/)
+- [Magic Dev Vulnerability Disclosure](https://apis.io/security/magic-dev/magic-dev-vulnerability-disclosure/)
 
-- **Created:** 2026-07-02
-- **Modified:** 2026-07-02
+## Where to find this API
 
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-- [GitHub Organization](https://github.com/magicproduct)
-- [LinkedIn](https://www.linkedin.com/company/magicailabs)
 - [Website](https://magic.dev)
 - [Blog](https://magic.dev/blog)
-- [Careers](https://magic.dev/careers)
-- [Safety](https://magic.dev/safety)
+- [GitHub](https://github.com/magicproduct)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 4.6** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 0.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 10.9** — AI & Biometrics
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/magic-dev/](https://apis.io/providers/magic-dev/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Magic: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/magic-dev/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
